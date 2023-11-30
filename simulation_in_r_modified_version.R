@@ -140,5 +140,14 @@ class(df$Name)
 # Save to CSV
 csv_file_path <- "/Users/matthieutohme/Desktop/Clinical Data Management/CDM_Week8/dataset.csv"
 write.csv(df, csv_file_path, row.names = FALSE)
-
 print(paste("Dataset successfully saved to", csv_file_path))
+
+
+  #########gene_expression_data with rlnorm ##############
+  num_genes <- 10  # Total number of genes to simulate
+num_samples <- 500  # Number of samples
+gene_expression_data <- matrix(rlnorm(num_genes * num_samples, meanlog = 4, sdlog = 1.5), 
+                     nrow = num_samples, 
+                     ncol = num_genes)
+df <- as.data.frame(gene_expression_data)
+colnames(df) <- paste("Gene", 1:num_genes, sep = "_")                            
