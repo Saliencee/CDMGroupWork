@@ -153,3 +153,39 @@ simulation <- data.frame(sample_id = sample_ids,
 
 head(simulation)
 View(simulation)
+
+
+
+
+print(table1_strat)
+                            Stratified by case_control
+                             case          control        p      test
+  n                            147           353                     
+  gender = Male (%)             80 (54.4)    178 ( 50.4)   0.474     
+  age (mean (SD))            50.07 (18.19) 49.91 (17.70)   0.929     
+  height (mean (SD))          1.66 (0.08)   1.70 (0.09)   <0.001     
+  weight (mean (SD))         91.78 (10.71) 73.67 (10.67)  <0.001     
+  bmi (mean (SD))            33.07 (2.54)  25.35 (2.90)   <0.001     
+  country (%)                                              0.899     
+     Brazil                     29 (19.7)     62 ( 17.6)             
+     India                      33 (22.4)     78 ( 22.1)             
+     Nigeria                    28 (19.0)     69 ( 19.5)             
+     UK                         33 (22.4)     74 ( 21.0)             
+     USA                        24 (16.3)     70 ( 19.8)             
+  education (%)                                            0.134     
+     Bachelor                   57 (38.8)    113 ( 32.0)             
+     High School                 0 ( 0.0)      8 (  2.3)             
+     Master                     54 (36.7)    122 ( 34.6)             
+     PhD                        34 (23.1)    107 ( 30.3)             
+     Primary                     2 ( 1.4)      3 (  0.8)             
+  SNP (%)                                                  0.256     
+     0                          34 (23.1)     66 ( 18.7)             
+     1                          80 (54.4)    220 ( 62.3)             
+     2                          33 (22.4)     67 ( 19.0)             
+  case_control = control (%)     0 ( 0.0)    353 (100.0)  <0.001
+
+
+
+
+
+
